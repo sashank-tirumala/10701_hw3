@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# Set up autograder files
+
+cp /autograder/submission/neural_network.py /autograder/source/code/
+
+cd /autograder/source/code
+
+python3.6 autograder.py
+
+cp report.json ../../results/results.json
+

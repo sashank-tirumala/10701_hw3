@@ -1,0 +1,52 @@
+\section*{Problem 2: Soft Margin Hyperplanes [9 points]}
+The soft-margin primal SVM problem is:
+
+\begin{align}\label{eqn:soft-svm}\text{min} \frac{1}{2} ||\textbf{w}||_2^2 + C \sum_{i=1}^N \xi^{(i)} \end{align}
+
+subject to feasibility constraints that for all $i=1,...,N$:
+
+$$y^{(i)}(\textbf{w}^T \xv^{(i)} + b) \geq 1 - \xi^{(i)}$$
+$$\xi^{(i)} \geq 0$$
+
+Suppose instead the optimization objective was  changed to $\frac{1}{2}||\textbf{w}||_2^2 + C \sum_{i=1}^N \xi^{(i)}^2$ while the feasibility constraints are kept the same. 
+
+\textbf{Hint}: Before attempting this problem, we highly recommend first trying to derive the dual formulations for the hard-margin and soft-margin SVMs presented in class by working through the steps detailed below.
+
+\begin{enumerate}
+\item \textbf{[2pts]} \textbf{Short Answer: }
+         How is the penalty changed (relative to the original formulation \ref{eqn:soft-svm}) for points within the margin? How about misclassified points?
+        
+ 
+    \begin{tcolorbox}[fit,height=4cm, width=15cm, blank, borderline={1pt}{-2pt},nobeforeafter]
+        %solution
+    \end{tcolorbox}
+    
+    
+\item \textbf{[1 pt]} Incorporate the feasibility constraints into the objective function using the method of Lagrange multipliers by writing out the Lagrangian and the associated constraints. 
+
+\begin{tcolorbox}[fit,height=5.0cm, width=0.95\textwidth, blank, borderline={1pt}{-2pt}]
+%solution 
+\end{tcolorbox}
+
+% \newpage 
+
+\item \textbf{[3 pts]} Next, take the partial derivative of the Lagrangian with respect to all of the optimization variables. Be sure to show all of you work.
+
+\begin{tcolorbox}[fit,height=21.0cm, width=0.95\textwidth, blank, borderline={1pt}{-2pt}]
+%solution 
+\end{tcolorbox}
+
+\newpage
+\item \textbf{[3 pts]} Finally, by setting the partial derivatives from the previous part equal to 0, derive the dual formulation of SVMs in this general case. Again, be sure to show all of you work.
+
+
+\begin{tcolorbox}[fit,height=18.0cm, width=0.95\textwidth, blank, borderline={1pt}{-2pt}]
+%solution 
+\end{tcolorbox}
+
+\end{enumerate}
+
+
+
+
+
